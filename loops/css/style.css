@@ -1,0 +1,19 @@
+table {
+    width: 600px;
+}
+p {
+    font: 1.5em bold;
+}
+table, tr, td {
+    border: #000000 solid 1px;
+    text-align: center;
+}
+.table1 td {
+    width: 200px;
+}
+.f-line, .table2 tr:nth-child(even) {
+    background-color: #d6d8d9;
+}
+.table2 td{
+    width: 120px;
+}
