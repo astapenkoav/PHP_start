@@ -1,8 +1,5 @@
 <?php
 header('Content-Type: text/html; charset= utf-8');
-ini_set('error_reporting', E_ALL);
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
 ?>
 
 <!doctype html>
@@ -25,5 +22,7 @@ ini_set('display_startup_errors', 1);
         <?php include 'script_r_1_a.php'; ?>
     <p>Задание №5</p>
         <?php include 'script_r_1_b.php'; ?>
+    <p>Задание №6</p>
+    <?php include 'script_r_2.php'; ?>
 </body>
 </html>
