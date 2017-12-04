@@ -1,5 +1,4 @@
 <?php
-header('Content-Type: text/html; charset= utf-8');
 
 echo '<table border="1 solid" width="30%"><tr><td align="center">Номер п/п</td><td align="center">Число</td></tr>'; //Открываем таблицу и создаем шапку
 for ($i=1; $i<=100; $i++) {
