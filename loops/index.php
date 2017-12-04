@@ -21,5 +21,9 @@ ini_set('display_startup_errors', 1);
         <?php include 'script_2_b.php'; ?>
     <p>Задание №3</p>
         <?php include 'script_3.php'; ?>
+    <p>Задание №4</p>
+        <?php include 'script_r_1_a.php'; ?>
+    <p>Задание №5</p>
+        <?php include 'script_r_1_b.php'; ?>
 </body>
 </html>
