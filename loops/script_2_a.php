@@ -1,18 +1,12 @@
 <?php
 
 $i = 1;
-
+$n = 43;
 echo "<tr>";
-for ($i;$i<=18;$i++) {
+for ($i;$i<=$n;$i++) {
     echo "<td>".$i."</td>";
-    if ($i==5) {
-        echo "</tr><tr>";
-    }
-    if ($i==10) {
-        echo "</tr><tr>";
-    }
-    if ($i==15) {
+    if ($i%5==0) {
         echo "</tr><tr>";
     }
 }
-echo "<td></td><td></td></tr>";
+echo "</tr>";
