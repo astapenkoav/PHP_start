@@ -1,2 +1,3 @@
 # PHP_start
-homework
+homework for courses PHP 2017
+Free and open-source software license
