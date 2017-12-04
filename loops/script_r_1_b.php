@@ -1,6 +1,4 @@
 <?php
-header('Content-Type: text/html; charset= utf-8');
-
 
 $n = 12; //Задаем количество столбцов
 echo '<table border="1px solid" width="30%"><tr><td align="center">Номер п/п</td><td align="center" colspan="'.$n.'">Число</td></tr>'; //Открываем таблицу и создаем шапку, в которой второй столбец объединяет количество столбцов $n
