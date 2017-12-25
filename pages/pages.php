@@ -1,5 +1,6 @@
 <?php
-define('MESSAGE_PER_PAGE', 8);
+
+define('MESSAGE_PER_PAGE', 9);
 
 function controller()
 {
