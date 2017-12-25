@@ -1,4 +1,5 @@
 <?php
+
 define('MESSAGE_PER_PAGE', 10);
 
 class Controller
