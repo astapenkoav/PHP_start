@@ -1,0 +1,10 @@
+			ul {
+                list-style: none;
+            }
+            #container {
+                position: relative;
+            }
+            footer {
+                  position: absolute;
+                  bottom: 0;
+            }
