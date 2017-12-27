@@ -144,6 +144,7 @@ class View
         $this->data = $data;
         $this->error = $error;
         $this->viewHeader();
+        $this->viewPagination();
         $this->viewMessages();
         $this->viewPagination();
         $this->viewForm();
@@ -151,15 +152,7 @@ class View
     }
 //отображаем Header
     private function viewHeader() {
-        echo '<!doctype html>
-            <html>
-            <head>
-                <link rel="stylesheet" href="css/bootstrap.min.css">
-                <meta charset="UTF-8">
-                <title>Гостевая книга</title>
-            </head>
-            <body>
-            <div class="container"><h1 class="text-center">Гостевая книга</h1>';
+        include 'header.html';
     }
 //отображаем отзыв
     private function viewMessages() {
@@ -188,18 +181,18 @@ class View
         $end = ($this->pageNumber + $this->pagination);
         if ($end > $this->pagesAmount)
             $end = $this->pagesAmount;
+        echo '<div class="mx-auto form-group" style="width: 5%">';
         for ($i = $start; $i<=$end; $i++) {
             if ($i == $this->pageNumber)
                 echo $i . '&nbsp;';
             else
                 echo '<a href="' . basename($_SERVER['SCRIPT_FILENAME']) . '?number=' . $i . '">' . $i . '</a>&nbsp;';
         }
+        echo '</div>';
     }
 //отображаем Footer
     private function viewFooter() {
-        echo '</div>
-              </body>
-              </html>';
+        include 'footer.html';
     }
 //отображаем форму
     private function viewForm() {
